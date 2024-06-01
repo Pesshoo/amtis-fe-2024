@@ -1,0 +1,56 @@
+html{
+    font-family: "Manrope";
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Noto Serif';
+    text-align: center;
+}
+
+h1{font-size: 5em; color: #522F18;}
+h2{font-size: 4em;}
+h3{font-size: 3em;}
+h4{font-size: 2em;}
+h5{font-size: 1.5em;}
+h6{font-size: 1em;}
+
+p{
+    font-weight: 400;
+    color: #3d3d3d;
+    text-align: center;
+    line-height: 2em;
+}
+
+li{
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    color: #3d3d3d;
+}
+
+.button-style-1{
+    padding: 1em;
+    background-color: #9B582E;
+    color: white;
+    text-align: center;
+    border-radius: 4em;
+}
+
+.button-style-2{
+    padding: 1em;
+    background-color: #FDF8EC;
+    color: #9B582E;
+    text-align: center;
+    border: 1px solid #9B582E;
+    border-radius: 4em;
+}
+
+.site-menu-desert-img img{
+    width: 20em;
+    height: auto;
+}

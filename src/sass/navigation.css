@@ -1,0 +1,28 @@
+.site-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    margin-bottom: 7em;
+}
+
+.site-nav img{
+    width: 178px;
+    height: 43px;
+}
+
+.site-nav nav ul{
+    display: flex;
+}
+
+.site-nav nav ul li a{
+    color: #9B582E;
+}
+
+.hamburger{
+    display: none;
+}
+
+.off-screen-menu{
+    display: none;
+}

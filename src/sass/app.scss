@@ -1,1 +1,467 @@
 // Продължи с твоя SCSS или обикновен CSS код тук.
+@import url("reset.css");
+@import url("typography.css");
+@import url("navigation.css");
+@import url("responsive.css");
+
+.site{
+    max-width: 75em;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.site-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 10em;
+}
+
+.site-header .site-header-heading{
+    position: relative;
+}
+
+.site-header .site-header-heading img{
+    position: absolute;
+}
+
+.site-header .site-header-heading .strawberry{
+    top: 7.6em;
+    left: 6.2em;
+}
+
+.site-header .site-header-heading .leaves{
+    top: 5em;
+    right: -2em;
+}
+
+.site-header h1 span{
+    color: #9B582E;
+}
+
+.site-header p{
+    margin-block: 3em;
+}
+
+.site-header .site-header-buttons a{
+    margin-inline: 1em;
+}
+
+
+// Section - Deserts
+
+.site-deserts{
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-bottom: 4em;
+}
+
+.site-deserts-desert-box{
+    background-color: #FBF4DF;
+    padding: 1.5em;
+    border-radius: 1em;
+    width: 15em;
+    height: 43em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    position: relative;
+}
+
+.site-deserts-desert-box .img-desert{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: -3em;
+}
+
+.site-deserts-desert-box .img-desert{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: -3em;
+}
+
+.site-deserts-desert-box .img-title-element{
+    width: 130px;
+    height: auto;
+    margin-top: 15em;
+    margin-bottom: 1.5em;
+}
+
+.site-deserts-desert-box p{
+    margin-block: 1em;
+}
+
+.vector{
+    width: 1300px;
+    height: auto;
+    z-index: -10;
+    position: absolute;
+    left: 50%;
+    opacity: 1;
+    transform: translateX(-50%);
+}
+
+// Section - Chef
+
+.site-chef{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10em;
+}
+
+.site-chef-left-side{
+    overflow: hidden;
+    position: relative;
+    height: 30em;
+}
+
+.site-chef-left-side::before,
+.site-chef-left-side::after {
+
+    display: block;
+    content: "";
+}
+
+.site-chef-left-side::before {
+
+    width: 75em;
+    height: 100em;
+
+}
+
+.img-chef{
+    position: absolute;
+    inset: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.site-chef-right-side{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    // margin-left: 5em;
+}
+
+.site-chef-right-side p{
+    text-align: start;
+}
+
+// Section - Menu
+
+.site-menu{
+    background-color: #FBF4DF;
+    padding: 3em;
+    border-radius: 1em;
+    margin-bottom: 10em;
+}
+
+.site-menu-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 3em;
+}
+
+.site-menu-desert{
+    background-color: #FEFCF6;
+    padding: 2em;
+    display: flex;
+    gap: 2em;
+    border-radius: 1em;
+    margin-bottom: 2em;
+}
+
+.site-menu-desert .site-menu-desert-img{
+    width: 28%;
+}
+
+// .site-menu-desert .site-menu-calories{
+//     width: 32%;
+// }
+
+.site-menu-desert .site-menu-desert-inf{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.site-menu-desert .site-menu-desert-inf h3{
+    text-align: start;
+    width: 10em;
+}
+
+.site-menu-desert .site-menu-desert-inf p{
+    font-size: 0.8em;
+    text-align: start;
+}
+
+.site-menu-desert .site-menu-desert-inf p span{
+    font-weight: bold;
+}
+
+.site-menu-calories{
+    display: flex;
+    background-color: #F9E8DC;
+    align-items: center;
+    padding: 2em;
+    border-radius: 1em;
+}
+
+.site-menu-calories .site-menu-calories-left-side{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-right: 1em;
+}
+
+.site-menu-calories .site-menu-calories-right-side{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.site-menu-calories h4{
+    text-align: start;
+}
+
+.site-menu-request{
+    padding: 1em;
+    background-color: #F9EECD;
+    border-radius: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-menu-request p{
+    text-align: start;
+}
+
+// section - feedbacks
+
+.site-feedbacks{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8em;
+}
+
+// .site-feedbacks .site-feedbacks-left-side,
+// .site-feedbacks .site-feedbacks-right-side{
+//     width: 50%;
+// }
+
+.site-feedbacks .site-feedbacks-left-side{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 2em;
+}
+
+// .site-feedbacks-left-side h2{
+//     text-align: start;
+// }
+
+.site-feedbacks-left-side img{
+    width: 10em;
+    height: 1em;
+}
+
+.site-feedbacks-right-side{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.feedback{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.feedback h5{
+    text-align: start;
+}
+
+.feedback p{
+    text-align: start;
+}
+
+// Section - Make request
+
+.site-make-request{
+    // background-color: #FBF4DF;
+    width: 100%;
+    padding: 3em;
+    margin-bottom: 10em;
+}
+
+.site-make-request header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    margin-bottom: 10em;
+}
+
+.site-make-request header h3{
+    width: 10em;
+}
+
+.site-make-request-inf{
+    display: flex;
+    justify-content: space-around;
+}
+
+.site-make-request-left-side{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.site-make-request-left-side .element{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.site-make-request-left-side .element h5{
+    text-align: start;
+}
+
+.site-make-request-right-side{
+    background-color: #F9EECD;
+    padding: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1em;
+    border-radius: 1em;
+    position: relative;
+}
+
+.site-make-request-right-side .request-form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+}
+
+.site-make-request-right-side .request-form textarea{
+    width: 80%;
+    padding: 0.5em;
+    border: none;
+    border-radius: 0.5em;
+}
+
+.site-make-request-right-side .question textarea{
+    padding: 2em;
+}
+
+.site-make-request-right-side a {
+    width: 10em;
+    height: auto;
+    margin-top: 2em;
+}
+
+.single-leave{
+    position: absolute;
+    top: -3em;
+    right: 1em;
+}
+
+// Section - News
+
+.site-news{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50em;
+    margin: 0 auto;
+    margin-bottom: 10em;
+    position: relative;
+}
+
+.site-news header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.site-news-container{
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+}
+
+.site-news-container .news span, 
+.site-news-container .news h3, 
+.site-news-container .news p{
+    text-align: start;
+    margin-block: 0.6em;
+}
+
+.site-news-container .news p{
+    margin-bottom: 3em;
+}
+
+.site-news .leave-1{
+    position: absolute;
+    width: 15em;
+    height: auto;
+    top: -15em;
+    left:-27em;
+}
+
+.site-news .leave-2{
+    position: absolute;
+    width: 10em;
+    height: auto;
+    bottom: 15em;
+    right:-22em;
+}
+
+// Footer
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em;
+    gap: 1em;
+    position: relative;
+}
+
+footer nav ul{
+    display: flex;
+    gap: 1em;
+}
+
+footer .rules ul{
+    display: flex;
+    gap: 1em;
+}
+
+.vector2{
+    width: auto;
+    height: 35em;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    z-index: -10;
+    margin: 0 auto;
+    transform: translateX(-50%);
+}
